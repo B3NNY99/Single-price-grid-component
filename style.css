@@ -1,0 +1,143 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+    margin: 0 0 0.9rem 0;
+    font-size: 1.3rem;
+    opacity: .8;
+}
+
+p {
+    color: hsl(204, 43%, 93%);
+    opacity: .6;
+}
+
+
+.contenitore {
+    padding: 2.5rem 1rem;
+}
+
+.topContainer {
+    background-color: white;
+    padding: 1.8rem;
+    border-top-right-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+}
+
+.sub-title-top {
+    color: hsl(71, 73%, 54%);
+}
+
+.top-description {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.8rem;
+    opacity: .8;
+}
+
+.cta {
+    background-color: hsl(179, 62%, 43%);
+    padding: 1.8rem;
+}
+
+.cont-price {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.price {
+    color: white;
+    font-size: 2rem;
+}
+
+.cta-desctription {
+    color: white;
+    opacity: .8;
+    margin: 0 0 2rem 0;
+}
+
+.btn {
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    border: 0;
+    border-radius: 0.3rem;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+
+}
+
+.whyus {
+    background-color: hsl(179, 49%, 55%);
+    padding: 1.8rem;
+    border-bottom-right-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.whyus-description {
+    line-height: 1.5rem;
+    margin: 0 5rem 0 0;
+}
+
+.attribution {
+    color: hsl(218, 22%, 67%);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media(min-width:700px) {
+
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenitore {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 39rem;
+    }
+
+    .topContainer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 2.1rem;
+    }
+
+    .cta {
+        border-bottom-left-radius: 0.4rem;
+        padding: 2.1rem;
+    }
+
+    .whyus {
+        border-bottom-left-radius: 0;
+        padding: 2.1rem;
+    }
+
+    .whyus-description {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        margin-right: 4rem;
+
+    }
+}
